@@ -1,0 +1,15 @@
+{
+	"name": "databeli-caresync",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6de7cbfa-9b5f-4b4d-a3b2-b43119405aa3",
+		"tenantId": "f274147a-dcb1-450e-9d07-e7c95e25da7c"
+	}
+}

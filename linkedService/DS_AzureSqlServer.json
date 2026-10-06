@@ -1,0 +1,23 @@
+{
+	"name": "DS_AzureSqlServer",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "databeli-azure-sql-server-db.database.windows.net",
+			"database": "caresync-database",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "kickadmin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_AzureKeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "azure-sql-password"
+			}
+		}
+	}
+}
